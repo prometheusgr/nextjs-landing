@@ -1,14 +1,17 @@
 
-import React, { Component } from "react";
+import Hero from '../components/sections/Hero';
+import FeaturesTiles from '../components/sections/FeaturesTiles';
 
-import { Router } from 'next/link';
-
-export default class Index extends Component {
-  componentDidMount = () => {
-    // Router.push("/admin/dashboard");
-  };
-
-  render() {
-    return <div></div>;
-  }
+function App() {
+  return (
+    <>
+      <Hero className="illustration-section-01" />
+      {/* <Cta split /> */}
+      <FeaturesTiles />
+      {/* <Video/> */}
+      {/* <FeaturesSplit invertMobile topDivider imageFill className="illustration-section-02" />
+      <Testimonial topDivider />  */}
+    </>
+  );
 }
+export default App;
